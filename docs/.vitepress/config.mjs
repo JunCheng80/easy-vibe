@@ -259,7 +259,7 @@ export default defineConfig({
             link: '/zh-cn/stage-2/frontend/2.0-lovart-assets/'
           },
           {
-            text: '高级开发',
+            text: '进阶开发',
             link: '/zh-cn/stage-3/core-skills/3.1-mcp-claudecode-skills/'
           },
           { text: '附录', link: '/zh-cn/appendix/ai-capability-dictionary' }

@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: 'Easy-Vibe'
+  name: 'Easy-Vibe （峻成）'
   text: 'Learn Vibe Coding from 0 to 1'
   tagline:
     - 不止是写代码，而是成为集产品、设计、全栈开发于一身的超级个体。
