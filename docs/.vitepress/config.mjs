@@ -262,7 +262,8 @@ export default defineConfig({
             text: '进阶开发',
             link: '/zh-cn/stage-3/core-skills/3.1-mcp-claudecode-skills/'
           },
-          { text: '附录', link: '/zh-cn/appendix/ai-capability-dictionary' }
+          { text: '附录', link: '/zh-cn/appendix/ai-capability-dictionary' },
+          { text: '备课生成器', link: '/zh-cn/lesson-builder/' }
         ],
         sidebar: {
           '/zh-cn/stage-0/': [
