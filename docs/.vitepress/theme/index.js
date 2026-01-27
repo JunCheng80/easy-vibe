@@ -1,3 +1,4 @@
+import RotatingTagline from './components/RotatingTagline.vue'   // 新增RotatingTagline组件
 import DefaultTheme from 'vitepress/theme'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -268,6 +269,7 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.use(ElementPlus)
+    app.component('RotatingTagline', RotatingTagline)   // 新增RotatingTagline组件
     app.component('StepBar', StepBar)
     app.component('ChapterIntroduction', ChapterIntroduction)
     app.component('WebTerminal', WebTerminal)

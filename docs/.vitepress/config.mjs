@@ -266,6 +266,16 @@ export default defineConfig({
           { text: '备课生成器', link: '/zh-cn/lesson-builder/' }
         ],
         sidebar: {
+          '/zh-cn/lesson-builder/': [
+            { text: '备课生成器',
+              items: [
+                { text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/' },
+                { text: '2.快速开始', link: '/zh-cn/lesson-builder/quickstart' },
+                { text: '3.课程输入｜Stage-0', link: '/zh-cn/lesson-builder/stage-0' },
+                { text: '4.设计说明', link: '/zh-cn/lesson-builder/design-spec' }
+              ]
+            },            
+          ],
           '/zh-cn/stage-0/': [
             { text: '1. 学习地图', link: '/zh-cn/stage-0/0.1-learning-map/' },
             {
@@ -273,6 +283,7 @@ export default defineConfig({
               link: '/zh-cn/stage-0/0.2-ai-capabilities-through-games/'
             }
           ],
+          
           '/zh-cn/stage-1/': [
             {
               text: '1. 认识 AI IDE 工具',
