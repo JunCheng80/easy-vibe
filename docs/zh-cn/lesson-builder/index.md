@@ -81,6 +81,8 @@ title: 备课首页
 
 </div>
 
+- 📌 [MVP-1 总结](./mvp-1)
+
 ---
 
 ## 我现在应该点哪个？
@@ -90,6 +92,95 @@ title: 备课首页
 - 想按路线推进开发、不额外做笔记：**[设计说明](/zh-cn/lesson-builder/design-spec)**
 
 ---
+
+## 我的教学备课系统(展示)
+<div class="kb-container">
+  <h3 class="kb-title">备课生成器 & 课程备课产物</h3>
+  <p class="kb-subtitle">
+    这里是我在 Easy-Vibe 基础上搭建的“备课生成器（Lesson Builder）”，以及它生成的课程备课产物（Lesson Plans）。
+  </p>
+
+  <div class="kb-grid">
+    <a class="kb-card"  href="/easy-vibe/zh-cn/lesson-builder/">
+      <div class="kb-icon">🧩</div>
+      <h3>备课生成器（说明）</h3>
+      <p>设计说明、MVP-1、Stage 路线图、模板与 schema 等。</p>
+      <span>进入 →</span>
+    </a>
+    <a class="kb-card"  href="/easy-vibe/zh-cn/lesson-plans/">
+      <div class="kb-icon">📚</div>
+      <h3>课程备课产物（成果）</h3>
+      <p>按课程/周次组织的实际备课内容，可直接用于教学。</p>
+      <span>查看 →</span>
+    </a>
+  </div>
+</div>
+
+<style>
+.kb-container{
+  max-width:1152px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  text-align:center;
+}
+.kb-title{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border: none;
+}
+.kb-subtitle{
+  font-size: 1.05rem;
+  color: var(--vp-c-text-2);
+  max-width: 860px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+.kb-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.kb-card{
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  border: 1px solid var(--vp-c-bg-soft);
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  display:block;
+}
+.kb-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-color: var(--vp-c-brand);
+}
+.kb-icon{
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+.kb-card h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--vp-c-text-1);
+}
+.kb-card p{
+  font-size: .92rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 14px;
+  line-height: 1.55;
+}
+.kb-card span{
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}
+</style>
+
 
 <style>
 /* ==== 广告感：动态背景光斑 + 渐变标题 + 卡片浮动 ==== */

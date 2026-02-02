@@ -267,7 +267,9 @@ import LanguageEcosystemDemo from './components/appendix/backend-languages/Langu
 export default {
   extends: DefaultTheme,
   Layout,
-  enhanceApp({ app }) {
+  enhanceApp(ctx) {
+    DefaultTheme.enhanceApp?.(ctx)    // ✅ 先把默认主题的 enhanceApp 跑一遍（保底兼容未来版本）
+    const { app } = ctx               // ✅ 然后继续用你原来的 app 写法
     app.use(ElementPlus)
     app.component('RotatingTagline', RotatingTagline)   // 新增RotatingTagline组件
     app.component('StepBar', StepBar)

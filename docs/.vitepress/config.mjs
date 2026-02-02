@@ -266,13 +266,25 @@ export default defineConfig({
           { text: '备课生成器', link: '/zh-cn/lesson-builder/' }
         ],
         sidebar: {
+          '/zh-cn/lesson-plans/': [
+            {
+              text: '课程备课产物',
+              items: [
+                { text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/' },
+                { text: '2.总览', link: '/zh-cn/lesson-plans/' },
+                { text: '3.智能语音处理及应用开发', link: '/zh-cn/lesson-plans/speech_appdev/' },
+                { text: '4.Week 01', link: '/zh-cn/lesson-plans/speech_appdev/week01' }
+              ]
+            }
+          ],
           '/zh-cn/lesson-builder/': [
             { text: '备课生成器',
               items: [
                 { text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/' },
                 { text: '2.快速开始', link: '/zh-cn/lesson-builder/quickstart' },
-                { text: '3.课程输入｜Stage-0', link: '/zh-cn/lesson-builder/stage-0' },
-                { text: '4.设计说明', link: '/zh-cn/lesson-builder/design-spec' }
+                { text: '3.MVP-1 总结', link: '/zh-cn/lesson-builder/mvp-1' },
+                { text: '4.课程输入｜Stage-0', link: '/zh-cn/lesson-builder/stage-0' },
+                { text: '5.设计说明', link: '/zh-cn/lesson-builder/design-spec' }
               ]
             },            
           ],
