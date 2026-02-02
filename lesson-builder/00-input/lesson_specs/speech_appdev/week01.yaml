@@ -1,0 +1,27 @@
+lesson:
+  course_id: speech_appdev
+  week: 1
+  title: 课程导论与语音AI全景
+  duration_minutes: 90
+
+  objectives:
+    - 说清楚 ASR/TTS 的基本概念与应用场景
+    - 了解语音AI流水线：采集→预处理→模型→评估→部署
+    - 完成一次“语音任务拆解”小练习
+
+  agenda:
+    - name: 破冰与课程说明
+      minutes: 10
+      notes: 说明课程考核、资源、工具链与项目产出
+    - name: 语音AI全景：ASR/TTS/说话人/情感
+      minutes: 25
+      notes: 用真实产品例子串起来（语音助手/字幕/配音等）
+    - name: 最小流水线拆解
+      minutes: 25
+      notes: 采样率、特征、模型、指标（WER/MOS）
+    - name: 课堂练习：把一个需求拆成流水线
+      minutes: 20
+      notes: 小组讨论：输入是什么？输出是什么？中间要哪些模块？
+    - name: 总结与作业
+      minutes: 10
+      notes: 布置下次课预习与本周作业

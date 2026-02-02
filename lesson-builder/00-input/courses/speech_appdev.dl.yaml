@@ -1,0 +1,9 @@
+course:
+  id: speech_appdev
+  name: 智能语音处理及应用开发
+  term: 2025-2026-2
+  total_hours: 64
+  outcomes:
+    - 理解语音信号基础与常见特征（MFCC等）
+    - 掌握ASR/TTS的基本流程与评估指标
+    - 能完成一个最小语音应用Demo（识别或合成）
