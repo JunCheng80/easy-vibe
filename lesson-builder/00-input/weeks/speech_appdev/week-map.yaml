@@ -1,0 +1,51 @@
+course_id: speech_appdev
+term: "2026S2"
+weeks:
+  - week: 1
+    theme: "课程导入 + 声学基础 + Praat入门"
+    chapters: ["1"]
+  - week: 2
+    theme: "音频格式 + Python/Anaconda/FFmpeg环境"
+    chapters: ["1","2"]
+  - week: 3
+    theme: "采样量化 + 读音频/提取音频 + 合成"
+    chapters: ["3"]
+  - week: 4
+    theme: "分帧加窗 + 时域指标（能量/过零率/自相关）"
+    chapters: ["4"]
+  - week: 5
+    theme: "频域分析（FFT/频谱图）+ STFT/语谱图"
+    chapters: ["4"]
+  - week: 6
+    theme: "小波变换 + 综合练习：分析一段语音/音乐"
+    chapters: ["4"]
+  - week: 7
+    theme: "语音产生与感知 + 汉语语音特征"
+    chapters: ["5"]
+  - week: 8
+    theme: "端点检测 + 基音估计 + MFCC/Fbank"
+    chapters: ["5"]
+  - week: 9
+    theme: "传统ASR：DTW + GMM"
+    chapters: ["6"]
+  - week: 10
+    theme: "传统ASR：HMM + Viterbi"
+    chapters: ["6"]
+  - week: 11
+    theme: "Whisper实战：安装/调用/批处理"
+    chapters: ["7"]
+  - week: 12
+    theme: "TTS与World声码器 + 合成实战"
+    chapters: ["8"]
+  - week: 13
+    theme: "音乐分析：节拍/音高/调性/恒Q"
+    chapters: ["9"]
+  - week: 14
+    theme: "MIDI：Mido/Music21 + 小作品生成"
+    chapters: ["10"]
+  - week: 15
+    theme: "深度学习：PyTorch + 声音分类小实验"
+    chapters: ["11","12"]
+  - week: 16
+    theme: "Transformer/语音识别前沿 + 课程项目答辩/总结"
+    chapters: ["13"]

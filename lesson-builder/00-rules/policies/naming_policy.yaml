@@ -1,0 +1,8 @@
+naming_policy:
+  week_filename_pattern: "^week\\d+\\.yaml$"
+  week_number_padding: 2
+  outputs:
+    syllabus: "syllabus.md"
+    calendar: "calendar.md"
+    lesson_plan: "week{{NN}}.lesson_plan.md"
+    ppt_deck: "week{{NN}}.ppt{{DD}}.md"

@@ -1,0 +1,67 @@
+week:
+  'no': 16
+  theme: Transformer/语音识别前沿 + 课程项目答辩/总结
+  chapters:
+    - '13'
+  objectives:
+    - （待补充）本周学习目标 1
+    - （待补充）本周学习目标 2
+  key_points:
+    - （待补充）本周重点 1
+    - （待补充）本周重点 2
+  schedule:
+    - type: 讲授
+      duration_min: 60
+      steps:
+        - （待补充）讲授内容要点
+    - type: 实操/练习
+      duration_min: 30
+      steps:
+        - （待补充）练习任务与步骤
+  homework:
+    - （待补充）本周作业 1
+  ppt_decks:
+    - deck_no: 1
+      title: W16-1｜Transformer/语音识别前沿 + 课程项目答辩/总结（上）
+      review_quiz:
+        single:
+          - （待补充）
+        multi: []
+        subjective: []
+      lead_in_question: （待补充）导入思考题
+      content_outline:
+        - （待补充）内容要点 1
+        - （待补充）内容要点 2
+      in_class_quiz:
+        single:
+          - （待补充）
+        multi:
+          - （待补充）
+        subjective:
+          - （待补充）
+      summary_points:
+        - （待补充）总结要点 1
+      after_class_homework:
+        - （待补充）作业 1
+    - deck_no: 2
+      title: W16-2｜Transformer/语音识别前沿 + 课程项目答辩/总结（下）
+      review_quiz:
+        single:
+          - （待补充）
+        multi: []
+        subjective: []
+      lead_in_question: （待补充）导入思考题
+      content_outline:
+        - （待补充）内容要点 1
+        - （待补充）内容要点 2
+      in_class_quiz:
+        single:
+          - （待补充）
+        multi:
+          - （待补充）
+        subjective:
+          - （待补充）
+      summary_points:
+        - （待补充）总结要点 1
+      after_class_homework:
+        - （待补充）作业 1

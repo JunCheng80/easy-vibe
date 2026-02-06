@@ -197,6 +197,95 @@ const commonThemeConfig = {
   }
 }
 
+// -------- MVP-2:自动扫描函数 ------------------（Begin)
+import fs from 'fs'
+import path from 'path'
+
+// 把 courseId 映射成更友好的中文名（可选）
+// 你可以持续往里加，不写也能跑（默认显示 courseId）
+const COURSE_NAME_MAP = {
+  speech_appdev: { full: '智能语音处理及应用开发', short: '智语处理开发' },
+}
+
+function readFrontmatterTitle(absPath) {
+  // 简单读一下 frontmatter 里的 title:（没有就返回空）
+  const s = fs.readFileSync(absPath, 'utf-8')
+  const m = s.match(/^\s*---[\s\S]*?\btitle:\s*(.+)\s*[\s\S]*?---/m)
+  return m ? m[1].trim().replace(/^['"]|['"]$/g, '') : ''
+}
+
+function buildLessonPlansSidebarItems({ docsRoot }) {
+  const baseDir = path.join(docsRoot, 'zh-cn', 'lesson-plans')
+  if (!fs.existsSync(baseDir)) return []
+
+  // 找到所有 <courseId>/<term>/index.md
+  const courseIds = fs.readdirSync(baseDir, { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => d.name)
+    .filter(name => name !== 'assets' && name !== '.vitepress')
+
+  const items = []
+
+  for (const courseId of courseIds) {
+    const courseDir = path.join(baseDir, courseId)
+    const terms = fs.readdirSync(courseDir, { withFileTypes: true })
+      .filter(d => d.isDirectory())
+      .map(d => d.name)
+      .sort() // term 名字本身可排序：2026S2 / 2026S1 ...
+
+    // 只收录包含 index.md 的 term
+    const termItems = []
+    for (const term of terms) {
+      const termDir = path.join(courseDir, term)
+      const indexMd = path.join(termDir, 'index.md')
+      if (!fs.existsSync(indexMd)) continue
+
+      const titleFromFm = readFrontmatterTitle(indexMd)
+      const nameObj = COURSE_NAME_MAP[courseId]
+      const courseFull = nameObj?.full || courseId
+      const courseShort = nameObj?.short || courseFull
+
+      // 你想显示短名就用 courseShort；想显示全称就用 courseFull
+      const preferName = courseShort
+
+      // 如果 frontmatter title 存在，就把里面的 courseId 替换成中文名
+      const normalizedTitle = titleFromFm
+        ? titleFromFm.replaceAll(courseId, preferName)
+        : `${preferName}｜${term}`
+
+      // 最终 termLabel：建议始终带学期
+      const termLabel = normalizedTitle.includes(term) ? normalizedTitle : `${normalizedTitle}｜${term}`
+
+      termItems.push(
+        { text: `1. ${term}-备课产出`, link: `/zh-cn/lesson-plans/${courseId}/${term}/` },
+        { text: `2. 教学大纲`, link: `/zh-cn/lesson-plans/${courseId}/${term}/syllabus` },
+        { text: `3. 教学进度表`, link: `/zh-cn/lesson-plans/${courseId}/${term}/calendar` },
+        { text: `4. 备课代办清单（报告）`, link: `/zh-cn/lesson-plans/${courseId}/${term}/todo_report` },
+      )
+    }
+
+    if (termItems.length) {
+      // const courseName = COURSE_NAME_MAP[courseId] || courseId
+      const nameObj = COURSE_NAME_MAP[courseId]
+      const courseFull = nameObj?.full || courseId
+      const courseShort = nameObj?.short || courseFull
+
+      items.push({
+        text: courseShort, 
+        collapsed: true,
+        items: termItems,
+      })
+    }
+  }
+
+  // 如果你还有一个总览 index.md，也可放在最前面
+  items.unshift({ text: '总览', link: '/zh-cn/lesson-plans/' })
+
+  return items
+}
+// -------- MVP-2:自动扫描函数 ------------------（End)
+
+
 export default defineConfig({
   markdown: {
     config: (md) => {
@@ -267,15 +356,10 @@ export default defineConfig({
         ],
         sidebar: {
           '/zh-cn/lesson-plans/': [
-            {
-              text: '课程备课产物',
-              items: [
-                { text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/' },
-                { text: '2.总览', link: '/zh-cn/lesson-plans/' },
-                { text: '3.智能语音处理及应用开发', link: '/zh-cn/lesson-plans/speech_appdev/' },
-                { text: '4.Week 01', link: '/zh-cn/lesson-plans/speech_appdev/week01' }
-              ]
-            }
+            {                  
+              text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/',
+              items: buildLessonPlansSidebarItems({ docsRoot: path.resolve(__dirname, '..') }),
+            },
           ],
           '/zh-cn/lesson-builder/': [
             { text: '备课生成器',
@@ -283,8 +367,10 @@ export default defineConfig({
                 { text: '1.备课首页（入口页）', link: '/zh-cn/lesson-builder/' },
                 { text: '2.快速开始', link: '/zh-cn/lesson-builder/quickstart' },
                 { text: '3.MVP-1 总结', link: '/zh-cn/lesson-builder/mvp-1' },
-                { text: '4.课程输入｜Stage-0', link: '/zh-cn/lesson-builder/stage-0' },
-                { text: '5.设计说明', link: '/zh-cn/lesson-builder/design-spec' }
+                { text: '4.MVP-2 运行手册', link: '/zh-cn/lesson-builder/mvp-2-playbook' },
+                { text: '5.课程输入｜Stage-0', link: '/zh-cn/lesson-builder/stage-0' },
+                { text: '6.设计说明', link: '/zh-cn/lesson-builder/design-spec' },
+                { text: '7.报告总览', link: '/zh-cn/lesson-plans/' },
               ]
             },            
           ],

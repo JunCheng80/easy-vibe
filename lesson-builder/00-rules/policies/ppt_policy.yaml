@@ -1,0 +1,30 @@
+ppt_policy:
+  ppt_per_week_min: 2
+
+  # 默认 deck 的“骨架内容”（引擎补齐时用）
+  default_deck:
+    title_suffix: "（自动补齐）"
+    lead_in_question: "（待补充）导入思考题"
+    content_outline:
+      - "（待补充）要点1"
+      - "（待补充）要点2"
+      - "（待补充）要点3"
+    summary_points:
+      - "（待补充）总结要点"
+    after_class_homework:
+      - "（待补充）课后作业"
+
+    review_quiz:
+      single: ["（待补充）"]
+      multi: []
+      subjective: []
+
+    in_class_quiz:
+      single: ["（待补充）单选题"]
+      multi: ["（待补充）多选题"]
+      subjective: ["（待补充）主观题"]
+
+  # 约束（校验/报告用）
+  minimums:
+    content_outline_min: 3
+    summary_points_max: 3

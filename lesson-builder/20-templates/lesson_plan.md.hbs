@@ -1,0 +1,27 @@
+# 课程教案｜Week {{week.no}}｜{{week.theme}}
+
+## 教学目标
+{{#each week.objectives}}
+- {{this}}
+{{/each}}
+
+## 教学重点
+{{#each week.key_points}}
+- {{this}}
+{{/each}}
+
+## 教学过程（建议）
+{{#each week.schedule}}
+### {{type}}（{{duration_min}}分钟）
+{{#each steps}}
+- {{this}}
+{{/each}}
+{{/each}}
+
+## 课后作业
+{{#each week.homework}}
+- {{this}}
+{{/each}}
+
+## 教学反思（占位）
+- （课后补充：学生掌握情况/节奏/改进点）

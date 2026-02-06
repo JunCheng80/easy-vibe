@@ -1,0 +1,67 @@
+week:
+  'no': 13
+  theme: 音乐分析：节拍/音高/调性/恒Q
+  chapters:
+    - '9'
+  objectives:
+    - （待补充）本周学习目标 1
+    - （待补充）本周学习目标 2
+  key_points:
+    - （待补充）本周重点 1
+    - （待补充）本周重点 2
+  schedule:
+    - type: 讲授
+      duration_min: 60
+      steps:
+        - （待补充）讲授内容要点
+    - type: 实操/练习
+      duration_min: 30
+      steps:
+        - （待补充）练习任务与步骤
+  homework:
+    - （待补充）本周作业 1
+  ppt_decks:
+    - deck_no: 1
+      title: W13-1｜音乐分析：节拍/音高/调性/恒Q（上）
+      review_quiz:
+        single:
+          - （待补充）
+        multi: []
+        subjective: []
+      lead_in_question: （待补充）导入思考题
+      content_outline:
+        - （待补充）内容要点 1
+        - （待补充）内容要点 2
+      in_class_quiz:
+        single:
+          - （待补充）
+        multi:
+          - （待补充）
+        subjective:
+          - （待补充）
+      summary_points:
+        - （待补充）总结要点 1
+      after_class_homework:
+        - （待补充）作业 1
+    - deck_no: 2
+      title: W13-2｜音乐分析：节拍/音高/调性/恒Q（下）
+      review_quiz:
+        single:
+          - （待补充）
+        multi: []
+        subjective: []
+      lead_in_question: （待补充）导入思考题
+      content_outline:
+        - （待补充）内容要点 1
+        - （待补充）内容要点 2
+      in_class_quiz:
+        single:
+          - （待补充）
+        multi:
+          - （待补充）
+        subjective:
+          - （待补充）
+      summary_points:
+        - （待补充）总结要点 1
+      after_class_homework:
+        - （待补充）作业 1

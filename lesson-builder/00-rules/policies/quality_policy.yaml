@@ -1,0 +1,12 @@
+quality_policy:
+  placeholder_keywords:
+    - "（待补充）"
+    - "TODO"
+    - "TBD"
+    - "待完善"
+
+  minimums:
+    objectives: 2
+    key_points: 2
+    schedule_items: 2
+    homework: 1

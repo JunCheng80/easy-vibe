@@ -1,0 +1,104 @@
+course:
+  id: speech_appdev
+  name: "智能语音处理及应用开发"
+  name_en: "Intelligent Speech Processing and Application Development"
+  code: "2EH3B0013"
+  required: true
+  credits: 4
+  weeks: 16
+  weekly_hours: 4
+  total_hours: 64
+  theory_hours: 32
+  practice_hours: 32
+  assessment_type: "考查"
+  textbook:
+    title: "语音与音乐信号处理轻松入门"
+    publisher: "清华大学出版社"
+    year: "2025"
+    note: "教材目录用于映射周主题"
+  ppt_per_week_min: 2
+
+  # 目录（来自你上传的教材信息，先作为知识骨架）
+  toc:
+    - ch: 1
+      title: "基础知识"
+      topics:
+        - "声学基础"
+        - "音频文件格式"
+        - "Praat简介"
+    - ch: 2
+      title: "Python基础"
+      topics:
+        - "Anaconda"
+        - "主要Python库"
+        - "绘图基础"
+        - "FFmpeg"
+    - ch: 3
+      title: "音频信号的获取"
+      topics:
+        - "采样与量化"
+        - "读取音频文件"
+        - "从视频提取"
+        - "声音合成"
+    - ch: 4
+      title: "音频信号分析初步"
+      topics:
+        - "分帧/加窗"
+        - "时域分析"
+        - "频域分析"
+        - "时频域分析（STFT/语谱图）"
+        - "小波变换"
+    - ch: 5
+      title: "语音识别基础"
+      topics:
+        - "语音产生与感知"
+        - "汉语语音特征"
+        - "端点检测"
+        - "基音估计"
+        - "MFCC/Fbank"
+    - ch: 6
+      title: "传统语音识别技术"
+      topics:
+        - "DTW"
+        - "GMM"
+        - "HMM"
+        - "Viterbi"
+    - ch: 7
+      title: "语音识别实战"
+      topics:
+        - "Whisper安装"
+        - "Whisper使用"
+    - ch: 8
+      title: "语音合成"
+      topics:
+        - "TTS"
+        - "World声码器"
+        - "语音合成实战"
+    - ch: 9
+      title: "音乐分析"
+      topics:
+        - "频带能量比/频谱特征/恒Q"
+        - "包络/节拍/音高/调性"
+    - ch: 10
+      title: "MIDI文件编程"
+      topics:
+        - "MIDI格式"
+        - "Mido"
+        - "Music21"
+    - ch: 11
+      title: "深度学习基础"
+      topics:
+        - "神经网络"
+        - "PyTorch"
+        - "声音分类案例"
+    - ch: 12
+      title: "常用神经网络"
+      topics:
+        - "CNN"
+        - "RNN/LSTM/GRU"
+        - "音乐风格分类案例"
+    - ch: 13
+      title: "深度学习与语音识别"
+      topics:
+        - "Word2Vec/ELMo"
+        - "Transformer与注意力"

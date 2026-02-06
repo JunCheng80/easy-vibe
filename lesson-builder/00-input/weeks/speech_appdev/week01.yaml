@@ -1,0 +1,55 @@
+week:
+  no: 1
+  theme: "课程导入 + 声学基础 + Praat入门"
+  chapters: ["1"]
+  objectives:
+    - "说清声音的产生与传播、声波的基本描述方式"
+    - "理解常见声音客观衡量指标与主观属性"
+    - "完成Praat安装与基础操作（打开/查看波形与频谱）"
+  key_points:
+    - "声波描述：时域与频域的直观理解"
+    - "Praat的基本界面与核心操作"
+  schedule:
+    - type: "讲授"
+      duration_min: 60
+      steps:
+        - "课程说明：考核/作业/项目"
+        - "声学基础：声音产生传播、声波描述、客观衡量与主观属性"
+    - type: "演示"
+      duration_min: 30
+      steps:
+        - "Praat安装与打开音频"
+        - "查看波形/频谱/语谱图入口"
+  homework:
+    - "完成Praat安装；上传1段自录语音（3~5秒）并截图展示波形"
+    - "用100~200字解释：你录制语音的能量变化与发声过程的关系"
+
+  ppt_decks:
+    - deck_no: 1
+      title: "W01-1｜课程导入与学习方式"
+      review_quiz: { single: ["（无）"], multi: [], subjective: [] }
+      lead_in_question: "为什么语音处理离不开‘信号观点’？"
+      content_outline:
+        - "课程目标、考核方式、作业与项目"
+        - "本课程工具链：Python + Praat + FFmpeg"
+      in_class_quiz:
+        single: ["本课程更强调哪类能力？（A应用 B算法推导 C背诵）"]
+        multi: ["下列哪些属于课程输出物？（可多选）"]
+        subjective: ["你希望用语音处理做一个什么小应用？"]
+      summary_points: ["先把工具跑通，再做算法与应用"]
+      after_class_homework: ["Praat安装 + 语音采集作业"]
+
+    - deck_no: 2
+      title: "W01-2｜声学基础与Praat快速上手"
+      review_quiz: { single: ["（无）"], multi: [], subjective: [] }
+      lead_in_question: "同一句话，为什么‘听起来’会不一样？"
+      content_outline:
+        - "声音的产生与传播"
+        - "声波描述与衡量指标"
+        - "Praat：打开音频与基本查看"
+      in_class_quiz:
+        single: ["声波最直观的时域表示是什么？"]
+        multi: ["哪些因素会影响语音的主观感受？"]
+        subjective: ["你录的语音里，哪一段能量最大？为什么？"]
+      summary_points: ["声学概念 + 工具操作 = 后续特征提取的基础"]
+      after_class_homework: ["上传自录语音与波形截图"]

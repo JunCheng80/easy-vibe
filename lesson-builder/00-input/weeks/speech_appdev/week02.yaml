@@ -1,0 +1,52 @@
+week:
+  no: 2
+  theme: "音频格式 + Python/Anaconda/FFmpeg环境"
+  chapters: ["1","2"]
+  objectives:
+    - "区分WAV/MP3/MIDI等常见格式及适用场景"
+    - "完成Python环境与核心库准备；能用FFmpeg提取音频"
+  key_points:
+    - "WAV与MP3：采样/压缩/码率的影响"
+    - "FFmpeg：从视频提取音频的标准流程"
+  schedule:
+    - type: "讲授"
+      duration_min: 45
+      steps:
+        - "音频文件格式与应用场景"
+        - "课程代码规范与作业提交规范"
+    - type: "实操"
+      duration_min: 45
+      steps:
+        - "Python库准备与读写音频"
+        - "FFmpeg从mp4提取wav"
+    - type: "讨论"
+      duration_min: 30
+      steps:
+        - "讨论：同一段音频用不同格式保存会带来哪些差异？"
+  homework:
+    - "提交：用FFmpeg从任意视频提取音频（wav），并用Python读取输出时长/采样率"
+
+  ppt_decks:
+    - deck_no: 1
+      title: "W02-1｜音频格式与工程化准备"
+      review_quiz: { single: ["声音的主观属性举一例？"], multi: [], subjective: [] }
+      lead_in_question: "为什么语音处理更偏向‘工程实践’？"
+      content_outline: ["WAV/MP3/MIDI对比", "Anaconda与库", "作业规范"]
+      in_class_quiz:
+        single: ["WAV相较MP3的典型优势是什么？"]
+        multi: ["影响MP3质量的因素有哪些？"]
+        subjective: ["你会如何选择格式来做语音识别数据集？"]
+      summary_points: ["格式选择影响数据质量与后续特征"]
+      after_class_homework: ["FFmpeg提取音频 + Python读取信息"]
+
+    - deck_no: 2
+      title: "W02-2｜FFmpeg与Python读音频实操"
+      review_quiz: { single: ["WAV与MP3最关键差异是？"], multi: [], subjective: [] }
+      lead_in_question: "一条命令把视频变成可训练数据：你会怎么做？"
+      content_outline: ["FFmpeg常用命令", "Python读取音频", "输出采样率/时长"]
+      in_class_quiz:
+        single: ["采样率的单位是什么？"]
+        multi: ["读音频常见字段有哪些？"]
+        subjective: ["你提取的音频在波形上有什么特征？"]
+      summary_points: ["先掌握数据获取，后谈算法"]
+      after_class_homework: ["提交提取结果与代码片段"]

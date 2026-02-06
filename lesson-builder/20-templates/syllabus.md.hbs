@@ -1,0 +1,16 @@
+# 教学大纲｜{{course.name}}（{{course.term}}）
+
+- 课程代码：{{course.code}}
+- 课程性质：{{#if course.required}}必修{{else}}选修{{/if}}
+- 学分：{{course.credits}}｜周数：{{course.weeks}}｜每周学时：{{course.weekly_hours}}｜总学时：{{course.total_hours}}
+- 理论/实践：{{course.theory_hours}} / {{course.practice_hours}}
+- 考核：{{course.assessment_type}}
+- 教材：{{course.textbook.title}}（{{course.textbook.publisher}}，{{course.textbook.year}}）
+
+## 教学内容（教材目录骨架）
+{{#each course.toc}}
+- 第{{ch}}章｜{{title}}
+  {{#each topics}}
+  - {{this}}
+  {{/each}}
+{{/each}}

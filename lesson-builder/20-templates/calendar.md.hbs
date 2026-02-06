@@ -1,0 +1,9 @@
+# 教学进度日历｜{{course.name}}（{{course.term}}）
+
+> 每周学时：{{course.weekly_hours}}｜每周PPT：≥ {{course.ppt_per_week_min}} 套
+
+| 周次 | 主题 | 章节 | 作业（摘录） |
+|---|---|---|---|
+{{#each weeks}}
+| Week {{week.no}} | {{week.theme}} | {{join week.chapters "、"}} | {{first week.homework}} |
+{{/each}}
