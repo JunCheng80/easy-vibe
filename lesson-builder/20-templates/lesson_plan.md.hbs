@@ -1,27 +1,130 @@
-# 课程教案｜Week {{week.no}}｜{{week.theme}}
+---
+title: {{lesson.title}}
+---
 
-## 教学目标
-{{#each week.objectives}}
-- {{this}}
-{{/each}}
+<table style="width:100%; border-collapse:collapse;" border="1">
+  <tr>
+    <th colspan="6" style="text-align:left;">一、课程信息</th>
+  </tr>
+  <tr>
+    <th style="width:12%;">课程名称</th>
+    <td style="width:38%;">{{course.name}}</td>
+    <th style="width:12%;">课程编码</th>
+    <td style="width:38%;" colspan="3">
+      {{#if course.code}}{{course.code}}{{else}}—{{/if}}
+    </td>
+  </tr>
+  <tr>
+    <th>课程性质</th>
+    <td>
+      {{#if course.type}}{{course.type}}{{else}}—{{/if}}
+    </td>
+    <th>授课对象</th>
+    <td colspan="3">
+      {{#if course.audience}}{{course.audience}}{{else}}—{{/if}}
+    </td>
+  </tr>
 
-## 教学重点
-{{#each week.key_points}}
-- {{this}}
-{{/each}}
+  <tr>
+    <th>章节名称</th>
+    <td colspan="5">{{lesson.chapter_title}}</td>
+  </tr>
 
-## 教学过程（建议）
-{{#each week.schedule}}
-### {{type}}（{{duration_min}}分钟）
-{{#each steps}}
-- {{this}}
-{{/each}}
-{{/each}}
+  <tr>
+    <th>教学周</th>
+    <td>{{lesson.week_no}}</td>
+    <th>章节学时</th>
+    <td colspan="3">{{lesson.hours}}</td>
+  </tr>
 
-## 课后作业
-{{#each week.homework}}
-- {{this}}
-{{/each}}
+  <tr>
+    <th colspan="6" style="text-align:left;">二、学情分析</th>
+  </tr>
+  <tr>
+    <td colspan="6">{{lesson.student_analysis}}</td>
+  </tr>
 
-## 教学反思（占位）
-- （课后补充：学生掌握情况/节奏/改进点）
+  <tr>
+    <th colspan="6" style="text-align:left;">三、教学内容分析</th>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <div>（一）教学基本内容：{{lesson.content_analysis.basic}}</div>
+      <div>（二）教学重点：{{lesson.content_analysis.key_points}}</div>
+      <div>（三）教学难点：{{lesson.content_analysis.difficult_points}}</div>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="6" style="text-align:left;">四、教学目标</th>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <div>（一）价值目标：{{lesson.objectives.value}}</div>
+      <div>（二）知识目标：{{lesson.objectives.knowledge}}</div>
+      <div>（三）能力目标：{{lesson.objectives.ability}}</div>
+      <div>（四）素质目标：{{lesson.objectives.quality}}</div>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="6" style="text-align:left;">五、课程教学过程设计</th>
+  </tr>
+  <tr>
+    <td colspan="6" style="padding:0;">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="width:10%;">教学进程</th>
+          <th style="width:25%;">教学内容</th>
+          <th style="width:20%;">教师行为</th>
+          <th style="width:20%;">学生行为</th>
+          <th style="width:15%;">教学方法</th>
+          <th style="width:10%;">时间安排</th>
+        </tr>
+        {{#if lesson.process}}
+          {{#each lesson.process}}
+          <tr>
+            <td style="text-align:center;">{{this.step}}</td>
+            <td>{{this.teach_content}}</td>
+            <td>{{this.teacher_action}}</td>
+            <td>{{this.student_action}}</td>
+            <td>{{this.method}}</td>
+            <td style="text-align:center;">{{this.time}}</td>
+          </tr>
+          {{/each}}
+        {{else}}
+          <tr>
+            <td colspan="6" style="text-align:center;">（本周过程设计待补充）</td>
+          </tr>
+        {{/if}}
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="6" style="text-align:left;">六、课后作业</th>
+  </tr>
+  <tr>
+    <td colspan="6">{{lesson.homework}}</td>
+  </tr>
+
+  <tr>
+    <th colspan="6" style="text-align:left;">七、教学反思</th>
+  </tr>
+  <tr>
+    <td colspan="6">{{lesson.reflection}}</td>
+  </tr>
+
+  <tr>
+    <th colspan="6" style="text-align:left;">八、参考资料</th>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <ol>
+        {{#each lesson.references}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ol>
+    </td>
+  </tr>
+</table>

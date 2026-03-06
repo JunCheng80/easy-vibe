@@ -1,0 +1,54 @@
+lesson:
+  title: "情感识别与语音理解：从分类到场景"
+  chapter_title: "语音理解扩展：情感/意图/场景化应用"
+  week_no: 10
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生会做分类但不清楚情感标签的主观性与数据偏差风险。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "情感识别任务；标签与数据偏差；简单特征与模型思路；场景落地。"
+    key_points: "标签定义与一致性；评估与泛化；合规风险。"
+    difficult_points: "处理主观标签与跨域泛化。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "培养对算法偏差与伦理风险的敏感度。"
+    knowledge: "理解情感识别任务与数据标签问题。"
+    ability: "能设计一个小型实验并说明偏差来源。"
+    quality: "形成负责任AI思维。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "案例导入：情感识别能做什么"
+      teacher_action: "展示场景与误判风险"
+      student_action: "讨论：误判后果"
+      method: "案例分析"
+      time: "15分钟"
+    - step: 2
+      teach_content: "标签与数据偏差"
+      teacher_action: "讲解主观标签一致性问题"
+      student_action: "提出降低偏差的方法"
+      method: "讨论法"
+      time: "30分钟"
+    - step: 3
+      teach_content: "评估与泛化"
+      teacher_action: "讲解跨域、交叉验证等概念"
+      student_action: "完成一个评估设计题"
+      method: "练习法"
+      time: "25分钟"
+    - step: 4
+      teach_content: "总结：负责任的语音AI"
+      teacher_action: "给出实践清单"
+      student_action: "写出1条合规注意事项"
+      method: "讲授法"
+      time: "20分钟"
+  # 六、课后作业
+  homework: "选一个情感识别场景，写出数据来源、标签定义、风险点与改进建议。"
+  # 七、教学反思（20-30字左右）
+  reflection: "伦理内容要结合真实案例，否则学生不敏感。"
+  # 八、参考资料（2-3条）
+  references:
+    - "情感识别入门资料"
+    - "数据偏差与评估方法说明"
+    - "负责任AI相关材料"

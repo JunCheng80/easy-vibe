@@ -9,3 +9,43 @@ MULTI_LANGUAGE_PLAN.md
 
 docs/zh-cn/lesson-builder/index.md1
 lesson-builder/30-outputs/
+
+# =========================
+# Generated outputs only
+# =========================
+lesson-builder/30-outputs/
+docs/zh-cn/lesson-plans/**/2026S3/
+docs/zh-cn/lesson-plans/**/2026S3*/
+
+# root generated docx
+/week01.lesson_plan.docx
+
+# =========================
+# Temporary / backup / cache
+# =========================
+*.tmp
+*.bak
+*.log
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# Editor
+# =========================
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Local env
+# =========================
+.env
+.env.*

@@ -1,9 +1,42 @@
 course:
+  school: 昆明城市学院
+  college: 数据科学与工程学院
+  major: 人工智能技术应用
+  teacher: 刘峻成
+  title: 助教
+
   id: speech_appdev
   name: 智能语音处理及应用开发
+  
+
+  # ✅ 当前用：lesson_plan.md.hbs 直接读取这三项
+  code: "2EH3B0013"
+  type: "专业核心"
+  audience: "24级人工智能技术应用1,2班"
+
   term: 2025-2026-2
   total_hours: 64
   outcomes:
     - 理解语音信号基础与常见特征（MFCC等）
     - 掌握ASR/TTS的基本流程与评估指标
     - 能完成一个最小语音应用Demo（识别或合成）
+
+  # 🧠 未来用（MVP-4）：同一门课多专业/多学期“开课实例”
+  # 引擎届时可以按 term/program 自动选择，覆盖 code/type/audience 等字段
+  offerings:
+    - id: aiapp_2025s2
+      term: 2025-2026-2
+      program: "人工智能技术应用"
+      code: "2EH3B0013"
+      type: "专业核心"
+      audience: "24级人工智能技术应用1,2班"
+
+    - id: aiapp_2026s1
+      term: 2026-2027-1
+      program: "人工智能技术应用"
+      code: "2EH3B0099"
+      type: "专业选修"
+      audience: "25级人工智能技术应用1班"
+
+  notes:
+    - "当前模板直接读取 course.code/type/audience；未来可切换为 course.offerings[]，按 term/program 覆盖差异字段。"

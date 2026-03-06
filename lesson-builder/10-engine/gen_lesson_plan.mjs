@@ -105,7 +105,7 @@ if (!courseYaml || !lessonYaml) {
 
 // ✅ 工厂容器固定路径
 const LB = "lesson-builder";
-const templatePath = path.resolve(LB, "20-templates", "lesson_plan.md");
+const templatePath = path.resolve(LB, "20-templates", "lesson_plan.md.hbs");
 const stamp = stampDate();
 const archiveDir = path.resolve(LB, "30-outputs", stamp);
 

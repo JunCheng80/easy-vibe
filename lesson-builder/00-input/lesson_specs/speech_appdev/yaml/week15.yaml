@@ -1,0 +1,54 @@
+lesson:
+  title: "项目中期检查：对比实验与问题修复"
+  chapter_title: "项目推进：对比实验、优化与排障"
+  week_no: 15
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生常见问题是缺少对比实验，优化没有依据；排障没有记录导致重复踩坑。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "中期检查；对比实验设计；问题定位；日志与记录；优化路径。"
+    key_points: "对比实验必须可复现；问题定位要有证据链。"
+    difficult_points: "从现象找到根因并提出可执行修复。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "建立以证据驱动优化的科研/工程习惯。"
+    knowledge: "掌握对比实验与排障记录方法。"
+    ability: "能完成一次对比实验并输出结论。"
+    quality: "培养规范汇报与迭代意识。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "中期检查标准"
+      teacher_action: "说明检查清单"
+      student_action: "对照清单自查"
+      method: "讲授法"
+      time: "10分钟"
+    - step: 2
+      teach_content: "对比实验设计"
+      teacher_action: "给‘只改一个变量’原则"
+      student_action: "设计本组对比实验"
+      method: "练习法"
+      time: "30分钟"
+    - step: 3
+      teach_content: "排障与记录"
+      teacher_action: "示范‘现象→猜测→验证→结论’"
+      student_action: "写一条排障记录"
+      method: "案例分析"
+      time: "30分钟"
+    - step: 4
+      teach_content: "组间汇报与点评"
+      teacher_action: "点评并给下一步建议"
+      student_action: "简短汇报"
+      method: "讨论法"
+      time: "20分钟"
+  # 六、课后作业
+  homework: "提交中期报告：对比实验（含结果）+ 排障记录（至少1条）+ 下一步计划。"
+  # 七、教学反思（20-30字左右）
+  reflection: "对比实验必须强制，否则项目容易水。"
+  # 八、参考资料（2-3条）
+  references:
+    - "实验设计与报告写作模板"
+    - "排障记录（issue log）模板"
+    - "评估指标与可视化参考"

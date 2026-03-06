@@ -1,0 +1,54 @@
+lesson:
+  title: "课程项目启动：需求→流水线→里程碑"
+  chapter_title: "项目化：需求拆解与计划制定"
+  week_no: 14
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生容易把项目做成“堆功能”，缺少里程碑与验收标准。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "项目选题；需求描述；输入/输出定义；里程碑与验收；风险清单。"
+    key_points: "把需求拆成模块与任务；明确验收标准。"
+    difficult_points: "范围控制与风险管理。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "建立职业化交付意识。"
+    knowledge: "掌握项目计划与验收的基本方法。"
+    ability: "能输出项目计划（模块、时间、验收、风险）。"
+    quality: "培养团队协作与沟通表达能力。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "项目要求与样例"
+      teacher_action: "讲解评分标准与优秀示例"
+      student_action: "明确组内分工"
+      method: "讲授法"
+      time: "15分钟"
+    - step: 2
+      teach_content: "需求→流水线拆解"
+      teacher_action: "指导拆解方法"
+      student_action: "完成本组拆解草图"
+      method: "任务驱动"
+      time: "35分钟"
+    - step: 3
+      teach_content: "里程碑与验收"
+      teacher_action: "给模板：每周产出/验收点"
+      student_action: "制定里程碑表"
+      method: "讲授法、练习法"
+      time: "25分钟"
+    - step: 4
+      teach_content: "风险清单与备选方案"
+      teacher_action: "点评风险是否真实可控"
+      student_action: "提交风险与备选"
+      method: "讨论法"
+      time: "15分钟"
+  # 六、课后作业
+  homework: "提交项目计划书（需求、流水线、里程碑、验收、风险）。"
+  # 七、教学反思（20-30字左右）
+  reflection: "必须强调‘验收标准’，否则后期评估困难。"
+  # 八、参考资料（2-3条）
+  references:
+    - "项目计划与需求文档模板"
+    - "语音项目案例参考"
+    - "团队协作工具使用说明（可选）"

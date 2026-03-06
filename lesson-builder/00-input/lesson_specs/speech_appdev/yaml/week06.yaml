@@ -1,0 +1,54 @@
+lesson:
+  title: "ASR基础：CTC思想与解码直觉"
+  chapter_title: "语音识别入门：CTC与解码"
+  week_no: 6
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生对“把语音变文字”感兴趣，但对对齐问题与CTC的存在理由不清楚。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "ASR任务定义；对齐困难；CTC基本思想；简单解码（贪心/beam）。"
+    key_points: "CTC如何解决长度不一致；blank与重复折叠；WER含义。"
+    difficult_points: "把概率序列转成文本的过程理解；WER计算。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "建立对模型输出与评估的客观认知。"
+    knowledge: "理解CTC核心机制与解码方式。"
+    ability: "能解释一段CTC输出如何变成文本，并计算简单WER。"
+    quality: "培养从输出到指标的闭环意识。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "ASR对齐问题引入"
+      teacher_action: "用例子展示‘长度不一致’"
+      student_action: "回答：难点在哪里"
+      method: "启发式"
+      time: "15分钟"
+    - step: 2
+      teach_content: "CTC机制讲解"
+      teacher_action: "讲解blank/折叠规则"
+      student_action: "跟做例题：序列→文本"
+      method: "讲授法"
+      time: "30分钟"
+    - step: 3
+      teach_content: "贪心与beam解码直觉"
+      teacher_action: "演示两种解码差异"
+      student_action: "讨论：何时需要beam"
+      method: "讨论法"
+      time: "25分钟"
+    - step: 4
+      teach_content: "WER入门与小练习"
+      teacher_action: "讲解WER定义与计算"
+      student_action: "完成1道WER计算题"
+      method: "练习法"
+      time: "20分钟"
+  # 六、课后作业
+  homework: "找一个ASR模型（或文章），写出：输出形式、解码方式、评估指标。"
+  # 七、教学反思（20-30字左右）
+  reflection: "例题和可视化是关键；CTC部分不宜过深推导。"
+  # 八、参考资料（2-3条）
+  references:
+    - "CTC入门讲解资料"
+    - "WER定义与示例"
+    - "开源ASR项目推理/解码代码参考"

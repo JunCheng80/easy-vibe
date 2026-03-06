@@ -1,0 +1,54 @@
+lesson:
+  title: "项目验收与课程总结：展示、反思与展望"
+  chapter_title: "课程收束：项目展示与复盘"
+  week_no: 16
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生需要明确最终交付物与评价维度，尤其是“可运行、可解释、可复现、可展示”。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "最终展示结构；验收标准；复盘方法；课程总结与后续方向。"
+    key_points: "交付物清单；演示脚本；实验记录；复盘与改进。"
+    difficult_points: "把过程经验沉淀成可复用资产。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "形成自我反思与持续学习意识。"
+    knowledge: "理解验收与复盘的标准流程。"
+    ability: "能完成一次规范展示与复盘报告。"
+    quality: "培养表达、总结与职业化交付能力。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "验收标准与展示结构"
+      teacher_action: "给出评分表与展示模板"
+      student_action: "按模板整理材料"
+      method: "讲授法"
+      time: "15分钟"
+    - step: 2
+      teach_content: "项目展示（分组）"
+      teacher_action: "组织展示与提问"
+      student_action: "展示与回答问题"
+      method: "展示法"
+      time: "50分钟"
+    - step: 3
+      teach_content: "复盘：做得好/问题/改进"
+      teacher_action: "引导复盘并给改进方向"
+      student_action: "提交复盘要点"
+      method: "讨论法"
+      time: "20分钟"
+    - step: 4
+      teach_content: "课程总结与展望"
+      teacher_action: "总结学习路径，给后续学习建议"
+      student_action: "写下个人下一步计划"
+      method: "讲授法"
+      time: "15分钟"
+  # 六、课后作业
+  homework: "提交最终报告：项目说明+演示说明+实验记录+复盘与展望。"
+  # 七、教学反思（20-30字左右）
+  reflection: "展示要提前彩排，避免最后一周全是临场排障。"
+  # 八、参考资料（2-3条）
+  references:
+    - "项目验收与汇报模板"
+    - "实验记录与复盘方法资料"
+    - "语音AI进阶学习资源清单"

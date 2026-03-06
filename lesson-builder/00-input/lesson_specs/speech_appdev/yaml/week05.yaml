@@ -1,0 +1,54 @@
+lesson:
+  title: "MFCC特征与传统ASR特征链"
+  chapter_title: "经典特征：MFCC与语音识别传统管线"
+  week_no: 5
+  hours: 4
+  # 二、学情分析（200-300字左右）
+  student_analysis: >
+    学生对MFCC听过但不理解每一步为何存在；容易把MFCC当黑盒。
+  # 三、教学内容分析
+  content_analysis:
+    basic: "MFCC步骤：Mel谱→log→DCT；一阶二阶差分；CMVN。"
+    key_points: "MFCC每一步的目的；与Mel谱的关系；适用场景。"
+    difficult_points: "理解DCT与‘去相关’的直观意义；特征选择依据。"
+  # 四、教学目标（四类目标）
+  objectives:
+    value: "理解‘经典方法也有价值’，培养技术演进视角。"
+    knowledge: "掌握MFCC构成与常用增强（delta/CMVN）。"
+    ability: "能实现或调用MFCC提取并解释输出。"
+    quality: "培养结构化拆解与复现能力。"
+  # 五、课程教学过程设计（数组，驱动表格行）
+  process:
+    - step: 1
+      teach_content: "回顾Mel谱与参数"
+      teacher_action: "快速复盘+提出MFCC问题"
+      student_action: "回答：Mel谱还缺什么？"
+      method: "提问法"
+      time: "10分钟"
+    - step: 2
+      teach_content: "MFCC全流程拆解"
+      teacher_action: "逐步讲解每一步目的"
+      student_action: "画出MFCC流程图"
+      method: "讲授法"
+      time: "30分钟"
+    - step: 3
+      teach_content: "delta/CMVN与稳定性"
+      teacher_action: "演示加入/不加入的效果差异"
+      student_action: "总结：稳定性来自哪里"
+      method: "演示法、讨论法"
+      time: "30分钟"
+    - step: 4
+      teach_content: "练习：提取MFCC并解释维度"
+      teacher_action: "点评与纠错"
+      student_action: "提交输出维度与解释"
+      method: "任务驱动"
+      time: "20分钟"
+  # 六、课后作业
+  homework: "完成MFCC特征提取（含delta/CMVN任选），写出每一步的目的说明。"
+  # 七、教学反思（20-30字左右）
+  reflection: "流程图任务很关键；要留时间让学生真正画出来。"
+  # 八、参考资料（2-3条）
+  references:
+    - "MFCC原理入门资料"
+    - "语音识别传统特征链资料"
+    - "librosa.feature.mfcc 文档"
