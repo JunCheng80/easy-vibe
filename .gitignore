@@ -49,3 +49,9 @@ Thumbs.db
 # =========================
 .env
 .env.*
+
+# local logs
+lesson-builder/_logs/
+
+# old backups
+lesson-builder/10-engine/_old/
